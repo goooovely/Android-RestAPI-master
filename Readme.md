@@ -12,7 +12,7 @@
 		- 디바이스의 정보를 변경하거나 조회하는 REST API
 		- 디바이스의 로그 정보를 조회하는 REST API
 
-![](figures/architecture.png)
+![](figures/newarchitecture.png)
 
 ### 1. REST API 설계
 - 다음 프로그램 코드를 실행시키기 위해서는 다음 형식의 **REST API**가 준비되어 있어야 합니다.
@@ -39,8 +39,8 @@
 			{ 
 				"tags" : [
 					{
-						"attrName": "temperature",
-						"attrValue": "27.0"
+						"attrName": "distance",
+						"attrValue": "22"
 					},
 					{
 						"attrName": "LED",
