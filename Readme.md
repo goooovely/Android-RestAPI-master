@@ -58,7 +58,7 @@
 		
 ### 2. AWS IoT 백엔드 구축
 
-다음 방법을 통해서 다음 IoT 백엔드를 구축한다.
+다음 방법을 통해서 다음 IoT 백엔드를 구축합니다.
 
 1. [AWS IoT와 아두이노 연결하기](https://kwanulee.github.io/IoTPlatform/start-aws-iot.html#2)
 2. [디바이스 상태에 따라 경고 이메일을 전송하는 IoT 백엔드 구축](https://kwanulee.github.io/IoTPlatform/serverless.html#3)
@@ -76,25 +76,15 @@
 
 ![](figures/start.png)
 
-- 앱을 실행하기 전에 API URI를 입력해야 합니다.
+- 앱을 실행하기 전에 API URI를 알아 두어야 합니다.
 	- Amazon API Gateway로 부터 만들어진  API 서버 URL을 기록해둡니다. 
 		
 		```
 		https://xxxxxxxx.execute-api.ap-northeast-2.amazonaws.com/prod 
 		```
-	- 사물목록 조회 API URI
+- 초기 실행 화면에 다음과 같은 URI를 입력합니다.
 		
 		```
 		https://xxxxxxxx.execute-api.ap-northeast-2.amazonaws.com/prod/devices
 		```
 	
-	- 사물상태 조회/변경 API URI
-
-		```
-		https://xxxxxxxx.execute-api.ap-northeast-2.amazonaws.com/prod/devices/{devices_name}
-		```
-	- 사물로그 조회 API URI
-
-		```
-		https://xxxxxxxx.execute-api.ap-northeast-2.amazonaws.com/prod/devices/{devices_name}/log
-		```	
