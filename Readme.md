@@ -4,6 +4,7 @@
 	- 디바이스 상태 조회/변경
 	- 디바이스 로그 조회
 	- 경고 알림/후방 모니터링
+	
 - **IoT 백엔드**는 AWS의 다양한 서비스(AWS IoT Core, AWS Lambda, Amazon DyanmoDB, Amazon SNS, Amazon API Gateway)를 이용해 구축된 IoT 클라우드 플랫폼입니다.
 	- **AWS IoT Device gateway**를 통해서 연결된 **아두이노 디바이스**(**MKRWiFi1010**)로부터 주기적으로 1초마다 디바이스 정보(현재 거리 및 LED 상태)를 수신하고, MQTT 프로토콜을 이용하여 **Device shadow** 혹은 **IoT rule** 컴포넌트와 상호작용합니다.
 		- **Device shadow**는 **Device gateway**를 통해 게시된 주제에 따라 디바이스 상태정보를 업데이트하거나 현재 상태정보를 게시합니다.
@@ -11,7 +12,8 @@
 	- **Amazon API Gateway**는 **AWS Lambda**함수를 통해서 다음 기능을 수행하는 두 가지 REST API를 게시합니다.
 		- 디바이스의 정보를 변경하거나 조회하는 REST API
 		- 디바이스의 로그 정보를 조회하는 REST API
-
+		
+- 구조는 다음과 같습니다.
 ![](figures/newarchitecture.png)
 
 ### 1. REST API 설계
@@ -84,7 +86,6 @@
 		```
 - 초기 실행 화면에 다음과 같은 URI를 입력합니다.
 		
-		```
 		https://xxxxxxxx.execute-api.ap-northeast-2.amazonaws.com/prod/devices
-		```
+		
 	
